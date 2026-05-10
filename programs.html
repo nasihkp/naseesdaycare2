@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs | Nasees Love & Learn Daycare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Nasees Daycare Logo" class="logo-img" onerror="this.src='https://placehold.co/100x100/0f8b4c/ffffff?text=Logo'">
+                <div class="logo-text">Nasees <span>Love & Learn</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admissions.html" class="btn btn-primary" style="color: white;">Admissions</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 0 100px; text-align: center;">
+        <div class="container">
+            <h1>Our <span>Programs</span></h1>
+            <p>Age-appropriate Montessori-inspired curriculums for holistic development.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="programs-grid">
+                <!-- Daycare Program -->
+                <div class="program-card">
+                    <div class="program-img"><i class="fas fa-bed"></i></div>
+                    <div class="program-content">
+                        <span class="program-age">1 - 6 Years</span>
+                        <h3 class="text-purple">Daycare Program</h3>
+                        <p>A home away from home with structured routines, healthy meals, and rest time.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check-circle"></i> Safe Sleeping Area</li>
+                            <li><i class="fas fa-check-circle"></i> Supervised Play</li>
+                            <li><i class="fas fa-check-circle"></i> Nutritious Meals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="copyright">&copy; <span id="year"></span> Nasees Love & Learn Daycare.</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+    </script>
+</body>
+</html>

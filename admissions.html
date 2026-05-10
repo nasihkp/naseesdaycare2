@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Nasees Love & Learn Daycare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admission-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .form-container {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--rounded-lg);
+            box-shadow: var(--shadow-lg);
+            border-top: 5px solid var(--primary-green);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-purple);
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--rounded-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(15, 139, 76, 0.1);
+        }
+        .step-card {
+            background: var(--white);
+            padding: 20px;
+            border-radius: var(--rounded-md);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-yellow);
+            color: var(--primary-purple);
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        @media (max-width: 768px) {
+            .admission-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Nasees Daycare Logo" class="logo-img" onerror="this.src='https://placehold.co/100x100/0f8b4c/ffffff?text=Logo'">
+                <div class="logo-text">Nasees <span>Love & Learn</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admissions.html" class="btn btn-primary active" style="color: white;">Admissions</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 0 60px; text-align: center;">
+        <div class="container">
+            <h1>Join Our <span>Family</span></h1>
+            <p>Begin your child's learning journey with us today.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container admission-grid">
+            
+            <div class="admission-info">
+                <h4 class="text-green">Admission Process</h4>
+                <h2 style="margin-bottom: 30px;">How to Enroll</h2>
+                
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Submit Inquiry</h4>
+                        <p style="margin-bottom: 0; font-size: 0.9rem;">Fill out the form to express your interest.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">School Visit</h4>
+                        <p style="margin-bottom: 0; font-size: 0.9rem;">We'll schedule a tour of our facilities for you and your child.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Interaction Session</h4>
+                        <p style="margin-bottom: 0; font-size: 0.9rem;">A brief, informal meet with our educators.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4 style="margin-bottom: 5px;">Documentation & Fees</h4>
+                        <p style="margin-bottom: 0; font-size: 0.9rem;">Submit required documents and complete the fee payment.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px; background: var(--light-yellow); padding: 20px; border-radius: var(--rounded-md);">
+                    <h4 class="text-purple"><i class="fas fa-file-lines text-green"></i> Required Documents</h4>
+                    <ul style="margin-top: 10px; padding-left: 20px; list-style-type: disc;">
+                        <li>Birth Certificate Copy</li>
+                        <li>Aadhar Card Copy (Parents & Child)</li>
+                        <li>4 Passport Size Photos</li>
+                        <li>Vaccination Record</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h3 class="text-center">Online Admission Form</h3>
+                <p class="text-center" style="font-size: 0.9rem; margin-bottom: 30px;">Fill out the details below and our team will contact you shortly.</p>
+                
+                <form action="https://formsubmit.co/nasihkp0271@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Admission Application">
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name</label>
+                        <input type="text" id="parentName" name="parentName" class="form-control" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="childName">Child's Name</label>
+                        <input type="text" id="childName" name="childName" class="form-control" required placeholder="Enter child's full name">
+                    </div>
+                    <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <div class="form-group">
+                            <label for="childAge">Child's Age</label>
+                            <input type="number" id="childAge" name="childAge" class="form-control" required placeholder="Years">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required placeholder="10-digit number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Preferred Program</label>
+                        <select id="program" name="program" class="form-control" required>
+                            <option value="">Select a Program</option>
+                            <option value="daycare">Daycare</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message/Questions</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Any specific requirements?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--rounded-md);">Submit Application</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="copyright">&copy; <span id="year"></span> Nasees Love & Learn Daycare.</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+    </script>
+</body>
+</html>

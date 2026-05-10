@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | Nasees Love & Learn Daycare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Nasees Daycare Logo" class="logo-img" onerror="this.src='https://placehold.co/100x100/0f8b4c/ffffff?text=Logo'">
+                <div class="logo-text">Nasees <span>Love & Learn</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="facilities.html" class="active">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admissions.html" class="btn btn-primary" style="color: white;">Admissions</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 0 100px; text-align: center;">
+        <div class="container">
+            <h1>Our Premium <span>Facilities</span></h1>
+            <p>Designed for safety, comfort, and interactive learning.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-shield-cat"></i></div>
+                    <h3>Safe Classrooms</h3>
+                    <p>Child-proofed environments designed to minimize risks and maximize exploration.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: var(--light-purple); color: var(--primary-purple);"><i class="fas fa-video"></i></div>
+                    <h3>CCTV Monitoring</h3>
+                    <p>24/7 surveillance to ensure complete security of all premises.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: #fff3e0; color: #ef6c00;"><i class="fas fa-cubes"></i></div>
+                    <h3>Montessori Materials</h3>
+                    <p>Premium educational tools that foster independent learning and sensory development.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: var(--light-purple); color: var(--primary-purple);"><i class="fas fa-bed"></i></div>
+                    <h3>Sleeping Area</h3>
+                    <p>Cozy, quiet, and supervised spaces for restful nap times.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-pump-soap"></i></div>
+                    <h3>Hygienic Washrooms</h3>
+                    <p>Child-sized, sanitized restroom facilities promoting personal hygiene.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: #fff3e0; color: #ef6c00;"><i class="fas fa-apple-whole"></i></div>
+                    <h3>Healthy Meals</h3>
+                    <p>Nutritious and delicious snacks/meals prepared in a clean environment.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: #fff3e0; color: #ef6c00;"><i class="fas fa-bus"></i></div>
+                    <h3>Transportation</h3>
+                    <p>Safe and reliable pick-up and drop-off services for your convenience.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-tree"></i></div>
+                    <h3>Outdoor Play</h3>
+                    <p>Fenced outdoor areas with safe play equipment for physical activity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="copyright">&copy; <span id="year"></span> Nasees Love & Learn Daycare.</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+    </script>
+</body>
+</html>

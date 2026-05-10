@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Nasees Love & Learn Daycare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Nasees Daycare Logo" class="logo-img" onerror="this.src='https://placehold.co/100x100/0f8b4c/ffffff?text=Logo'">
+                <div class="logo-text">Nasees <span>Love & Learn</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admissions.html" class="btn btn-primary" style="color: white;">Admissions</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 0 100px; text-align: center;">
+        <div class="container">
+            <h1>About <span>Our Family</span></h1>
+            <p>Discover the passion and philosophy behind Nasees Love & Learn.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container about-grid">
+            <div class="about-content">
+                <h4 class="text-green">Our Story</h4>
+                <h2>A Vision for Early Education</h2>
+                <p>Nasees Love & Learn Daycare & Preschool was founded with a simple yet profound vision: to provide a nurturing, safe, and stimulating environment where children can thrive during their most crucial developmental years.</p>
+                <p>Located in the heart of Mangalshery, Vellamunda, we offer a Montessori-inspired approach that balances structured learning with creative play. Our goal is to partner with parents to lay a strong foundation for lifelong learning, social-emotional well-being, and academic success.</p>
+            </div>
+            <div class="about-img">
+                <img src="about_teachers.png" alt="Our teachers" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop'">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--light-yellow);">
+        <div class="container text-center">
+            <h2 class="text-purple" style="margin-bottom: 40px;">Our Core Values</h2>
+            <div class="programs-grid">
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: var(--light-purple); color: var(--primary-purple);"><i class="fas fa-heart"></i></div>
+                    <h3>Love & Care</h3>
+                    <p>We treat every child with the same love, respect, and attention they receive at home.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon" style="background: #fff3e0; color: #ef6c00;"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Holistic Growth</h3>
+                    <p>Focusing on cognitive, physical, social, and emotional development through balanced activities.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Safety First</h3>
+                    <p>A secure, hygienic, and child-friendly environment equipped with modern safety measures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Include (Simplified for brevity, similar to index) -->
+    <footer>
+        <div class="container">
+            <div class="copyright text-center">
+                &copy; <span id="year"></span> Nasees Love & Learn Daycare & Preschool.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Nasees Love & Learn Daycare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .testimonial-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--rounded-lg);
+            box-shadow: var(--shadow-sm);
+            border-left: 5px solid var(--primary-purple);
+            position: relative;
+        }
+        .testimonial-card i.fa-quote-left {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: var(--light-purple);
+            opacity: 0.5;
+        }
+        .stars {
+            color: var(--primary-yellow);
+            margin-bottom: 15px;
+        }
+        .parent-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .parent-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Nasees Daycare Logo" class="logo-img" onerror="this.src='https://placehold.co/100x100/0f8b4c/ffffff?text=Logo'">
+                <div class="logo-text">Nasees <span>Love & Learn</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="admissions.html" class="btn btn-primary" style="color: white;">Admissions</a></li>
+            </ul>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 80px 0 100px; text-align: center;">
+        <div class="container">
+            <h1>Parent <span>Testimonials</span></h1>
+            <p>Hear what our happy parents have to say about us.</p>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container testimonial-grid">
+            
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Nasees Love & Learn has been a second home for my daughter. The teachers are incredibly warm and the facilities are top-notch. I can see a remarkable improvement in her social skills."</p>
+                <div class="parent-info">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--light-green); display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-green);">S</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1rem;">Sara M.</h4>
+                        <span style="font-size: 0.8rem; color: #666;">Mother of Ayesha (Nursery)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Finding a safe daycare in Vellamunda was tough until we found Nasees. The hygiene standards and the CCTV monitoring give us immense peace of mind while we are at work."</p>
+                <div class="parent-info">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--light-purple); display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-purple);">R</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1rem;">Rahul K.</h4>
+                        <span style="font-size: 0.8rem; color: #666;">Father of Aryan (Daycare)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>"The Montessori approach here is brilliant. My son looks forward to going to school every day. The creative activities and the outdoor play have really brought out his creative side."</p>
+                <div class="parent-info">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background: #fff3e0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #ef6c00;">F</div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1rem;">Fatima Z.</h4>
+                        <span style="font-size: 0.8rem; color: #666;">Mother of Zayan (Junior KG)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="copyright">&copy; <span id="year"></span> Nasees Love & Learn Daycare.</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        if(mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => { navLinks.classList.toggle('active'); });
+        }
+    </script>
+</body>
+</html>
